@@ -1,0 +1,30 @@
+type,indicator,description
+sha256,18e4b49fd7e15ca846c6346ce58268ff206974eefde55ef5998a2e9cd3b203e2,service.exe - GitHub-hosted update payload (~90946 downloads)
+sha256,ac0ef032165f08ebf92702b3c401b801e944638c81e979e29473897c69c35dff,svhost.exe - typosquat of svchost.exe (~38733 downloads)
+sha256,038f1f914d23573dd748f6b58c5ffdf2f1fb964147462e1db98355d66817367a,Host.exe (~40430 downloads)
+sha256,c935e0e1f2a230b4583b8d46a607631f4f27d7b582e76a341f82d130805e0d17,decrypted Salat Stealer payload (12.5MB PE32 i386)
+domain,salator.es,C2 - active - behind Cloudflare (flagged Suspected Malware)
+domain,websalat.top,C2 - active - behind Cloudflare (flagged Suspected Phishing)
+domain,webrat.top,C2 - active - behind Cloudflare
+domain,wruser.org,C2 admin panel (WEB_RAT) - active - origin exposed (no CF proxy)
+domain,webr.at,C2 - active - direct to OVH
+domain,webrat.org,C2 - active - direct to OVH
+domain,pidorasina.ru,C2 - active - direct to REG.RU
+domain,salat.cn,C2 - dead/expired (oldest domain, now parked)
+domain,wrat.in,C2 - dead (serverHold); WHOIS registrant RU/Primorskiy
+domain,webrat.in,C2 - inactive
+domain,webrat.su,C2 - inactive
+domain,posholnahuy.ru,C2 - inactive
+domain,nyash.team,operator brand domain - unresolved
+url_pattern,/sa1at/,C2 URL path used across the family
+ip,2.59.219.233,AlexHost SRL (Moldova) - hosts wruser.org panel; port 992 open
+ip,185.213.240.179,FreakHosting Ltd (UK) - historic wrat.in host
+ip,141.95.112.163,OVH GmbH (Germany) - webr.at / webrat.org
+ip,95.163.244.136,REG.RU (Russia) - pidorasina.ru
+ip,62.109.0.189,WebDC (Khimki, Russia) - admin panel /login/ (active since >= Sep 2025)
+key,f222227925253d5b827a363444728c667e3fdeff5a122556cd8935893154c1ba,ChaCha20-Poly1305 key for embedded + update payloads
+doh,https://1.1.1.1/dns-query,DoH resolver abused for C2 name resolution
+doh,https://cloudflare-dns.com/dns-query,DoH resolver abused for C2 name resolution
+doh,https://dns.google/resolve,DoH resolver abused for C2 name resolution
+artifact,%APPDATA%\<random>\agent_<8-random>.exe,dropped and run hidden by the loader
+artifact,%LOCALAPPDATA%\Temp\Staem.exe,payload self-relocation (typosquat of Steam.exe)
