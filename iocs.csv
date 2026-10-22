@@ -1,7 +1,7 @@
 type,indicator,description
-sha256,18e4b49fd7e15ca846c6346ce58268ff206974eefde55ef5998a2e9cd3b203e2,service.exe - GitHub-hosted update payload (~90946 downloads)
-sha256,ac0ef032165f08ebf92702b3c401b801e944638c81e979e29473897c69c35dff,svhost.exe - typosquat of svchost.exe (~38733 downloads)
-sha256,038f1f914d23573dd748f6b58c5ffdf2f1fb964147462e1db98355d66817367a,Host.exe (~40430 downloads)
+sha256,18e4b49fd7e15ca846c6346ce58268ff206974eefde55ef5998a2e9cd3b203e2,service.exe - GitHub-hosted update payload
+sha256,ac0ef032165f08ebf92702b3c401b801e944638c81e979e29473897c69c35dff,svhost.exe - typosquat of svchost.exe
+sha256,038f1f914d23573dd748f6b58c5ffdf2f1fb964147462e1db98355d66817367a,Host.exe
 sha256,c935e0e1f2a230b4583b8d46a607631f4f27d7b582e76a341f82d130805e0d17,decrypted Salat Stealer payload (12.5MB PE32 i386)
 domain,salator.es,C2 - active - behind Cloudflare (flagged Suspected Malware)
 domain,websalat.top,C2 - active - behind Cloudflare (flagged Suspected Phishing)
